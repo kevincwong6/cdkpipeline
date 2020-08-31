@@ -4,5 +4,9 @@
     "@aws-cdk/core:enableStackNameDuplicates": "true",
     "aws-cdk:enableDiffNoFail": "true",
     "@aws-cdk/core:stackRelativeExports": "true"
+  },
+
+  "context": {
+    "@aws-cdk/core:newStyleStackSynthesis": true
   }
 }
