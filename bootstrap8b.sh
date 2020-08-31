@@ -1,4 +1,5 @@
 npx cdk bootstrap \
-  --profile account1 \
+  --trust kevincwong8b \
   --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
-  aws://ACCOUNT1/us-west-1
+  aws://912568295710/us-west-1
+
