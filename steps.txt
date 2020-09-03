@@ -1,0 +1,29 @@
+
+
+
+npm install @aws-cdk/core
+
+## to update boostrp
+cdk bootstrap
+
+npm install -g aws-cdk@1.61.1
+cdk bootstrap --context @aws-cdk/core:newStyleStackSynthesis=1
+
+# Install dependencies for the CDK application
+npm install @aws-cdk/aws-apigateway @aws-cdk/aws-lambda \
+  @aws-cdk/aws-codepipeline @aws-cdk/aws-codepipeline-actions \
+  @types/aws-lambda
+
+# Install CDK pipelines
+npm install @aws-cdk/pipelines
+
+####################################################
+npx cdk bootstrap \
+  --profile account1-profile \
+  --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
+  aws://912568295710/us-west-1
+
+
+
+
+npx cdk deploy CdkpipelinesDemoPipelineStack --profile account1-profile
